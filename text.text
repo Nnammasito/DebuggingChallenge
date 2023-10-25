@@ -1,0 +1,18 @@
+
+
+Ver un error de validación en Name si no se da un Name para el formulario en la primera página.​
+
+
+Ser redirigido a la página Generar una vez completado correctamente el formulario de usuario.​
+Una persona NO debería poder acceder a la página Generar si no ha utilizado el formulario de usuario.​
+
+    Puedes probar esta función escribiendo "localhost:5XXX/generator" en la URL para navegar a la página interna.​ 
+
+Un código de acceso aleatorio debería generarse automáticamente al acceder a la página Generar.​
+La parte superior de la página Generar debería decir "¡Bienvenido, [Nombre del usuario] de [Ubicación del usuario a menos que no se revele]!".​
+Al hacer clic en el botón "Cerrar sesión", el usuario deberá ser redirigido a la página Índice. En ese momento, no podrá volver a la página Generar (intenta escribir "localhost:5XXX/generator" en la URL de nuevo) a menos que rellenes de nuevo el formulario de usuario.​
+
+    Esta función de cierre de sesión debe realizarse con una solicitud POST.​
+
+Al hacer clic en el botón "Nuevo código" se generará un nuevo código de acceso que se mostrará en la página.​
+Todos los datos deben almacenarse correctamente en la sesió

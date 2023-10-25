@@ -10,7 +10,8 @@
         <div class="mb-3">
             <label for="Name">What is your name?</label>
             <input asp-for="Name" class="form-control">
-            <span asp-validation-for="Name" class="class=" invalid-feedback""></span>
+            @* <span asp-validation-for="Name" class="class=" invalid-feedback></span> *@
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <label for="Location">(Optional) Where are you from?</label>

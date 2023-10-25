@@ -4,8 +4,8 @@ namespace DebuggingChallenge.Models;
 
 public class User
 {
-
-    [Required]
+    //Ingresar la validación y el mensaje
+    [Required(ErrorMessage = "Ingrese nombre")]
     [MinLength(4, ErrorMessage = "Ingrese nombre")]
     public string Name {get;set;}
 

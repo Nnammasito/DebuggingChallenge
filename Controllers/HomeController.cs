@@ -44,6 +44,7 @@ public class HomeController : Controller
     [HttpGet("generator")]
     public IActionResult Generator()
     {
+        //Cambiar de Name por Username
         if(HttpContext.Session.GetString("Username") == null)
         {
             return RedirectToAction("Index");
@@ -66,6 +67,7 @@ public class HomeController : Controller
     [HttpPost("generate/new")]
     public IActionResult GenerateNew()
     {
+        //Faltaba invocar la generación de passcode
         GeneratePasscode();
         return RedirectToAction("Generator");
     }
